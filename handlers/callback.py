@@ -30,6 +30,7 @@ Made with ❤️""",
                     InlineKeyboardButton(
                         "🔰️ Join IsItIsAsItIs 🔰️", url="https://t.me/IsItIsAsItIs"
                     )
+                ]
             ]
         )
     )
