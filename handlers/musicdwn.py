@@ -37,7 +37,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@Client.on_message(filters.command(['yts', 'yst@MusicsNexa_Bot']))
+@Client.on_message(filters.command(['yts', 'yst@PattsMusicBot']))
 def song(client, message):
 
     user_id = message.from_user.id 
@@ -77,7 +77,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🎙 **Title**: [{title[:35]}]({link})\n🎬 **Source**: `YouTube`\n⏱️ **Song Duration**: `{duration}`\n👁‍🗨 **Song Views**: `{views}`\n**Uploaded By**: **@MusicsNexa_Bot** \n **Join @NexaBotsUpdates 😉** '
+        rep = f'🎙 **Title**: [{title[:35]}]({link})\n🎬 **Source**: `YouTube`\n⏱️ **Song Duration**: `{duration}`\n👁‍🗨 **Song Views**: `{views}`\n**Uploaded By**: **@PattsMusicBot** \n **Join @IsItIsAsItIs 😉** '
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -110,7 +110,7 @@ async def download_song(url):
 # Jiosaavn Music
 
 
-@Client.on_message(filters.command(["saavn", "saavn@MusicsNexa_Bot"]) & ~filters.edited)
+@Client.on_message(filters.command(["saavn", "saavn@PattsMusicBot"]) & ~filters.edited)
 @capture_err
 async def jssong(_, message):
     global is_downloading
@@ -154,7 +154,7 @@ async def jssong(_, message):
 # Deezer Music
 
 
-@Client.on_message(filters.command(["deezer", "deezer@MusicsNexa_Bot"]) & ~filters.edited)
+@Client.on_message(filters.command(["deezer", "deezer@PattsMusicBot"]) & ~filters.edited)
 @capture_err
 async def deezsong(_, message):
     global is_downloading
@@ -198,7 +198,7 @@ async def deezsong(_, message):
 # Song Lyrics
 
 
-@Client.on_message(filters.command(["lyrics", "lyrics@MusicsNexa_Bot"]))
+@Client.on_message(filters.command(["lyrics", "lyrics@PattsMusicBot"]))
 async def lyrics_func(_, message):
     if len(message.command) < 2:
         await message.reply_text("**Sike That's The Wrong Command Usage!** \nUse `/lyrics` (song name)")
@@ -217,7 +217,7 @@ async def lyrics_func(_, message):
     
 # Youtube Video Download
 
-@Client.on_message(filters.command(["ytvid", "ytvid@MusicsNexa_Bot"]))
+@Client.on_message(filters.command(["ytvid", "ytvid@PattsMusicBot"]))
 async def ytmusic(client, message: Message):
     global is_downloading
     if is_downloading:
