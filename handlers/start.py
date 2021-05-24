@@ -7,38 +7,30 @@ from helpers.filters import command, other_filters, other_filters2
 
 
 ## ~ Simple Config ~ ##
-FRIEND_BOT = "TheNexasMusic_bot"
+FRIEND_BOT = "IsItIsAsItIsMusicBot"
 USER_ACCNAME = os.getenv("USER_ACCNAME", "NexaMusicAssistant")
 
 
-@Client.on_message(command(["start", "start@MusicsNexa_bot"]))
+@Client.on_message(command(["start", "start@PattsMusicBot"]))
 async def start(_, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name} 😉️!</b>
 
-I'm The Nexa Music Bot. Friend of **@{FRIEND_BOT}** 😏️.
+I'm Patt's Music Bot. Friend of **@{FRIEND_BOT}** 😏️.
 
 I can play Music In Telegram Groups Via Voice Chat! 😌️.
 
-Made with ❤️ <b>@NexaBotsUpdates</b>""",
+Made with ❤️""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add Me To Your Group ➕", url="https://t.me/MusicsNexa_bot?startgroup=true"
+                        "🤨️ How To Use Me 🤨️", url="https://telegra.ph/How-To-Use-Patts-Music-Bot-05-23"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🤨️ How To Use Me 🤨️", url="https://telegra.ph/How-To-Use-Music-Nexa-Bot-03-16"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🔰️ My Update Channel 🔰️", url="https://t.me/NexaBotsUpdates"
-                    ),
-                    InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Nexa_bots"
+                        "🔰️ Join IsItAsItIs 🔰️", url="https://t.me/IsItIsAsItIs"
                     )
                 ]
             ]
@@ -46,7 +38,7 @@ Made with ❤️ <b>@NexaBotsUpdates</b>""",
     )
     
     
-@Client.on_message(command(["help", "help@MusicsNexa_bot"]))
+@Client.on_message(command(["help", "help@PattsMusicBot"]))
 async def help(_, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name} 😉️!</b>
@@ -62,7 +54,7 @@ How To Use Me? 🧐️
  
 **For More Info or Know about My Commands Just Click On "♻️ Additional Help ♻️" Button!**
 
-Made with ❤️ <b>@NexaBotsUpdates</b>""",
+Made with ❤️""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -72,10 +64,7 @@ Made with ❤️ <b>@NexaBotsUpdates</b>""",
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔰️ Update Channel 🔰️", url="https://t.me/NexaBotsUpdates"
-                    ),
-                    InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Nexa_bots"
+                        "⚜️ Join IsItIsAsItIs ⚜️", url="https://t.me/IsItIsAsItIs"
                     )
                 ]
             ]
@@ -83,7 +72,7 @@ Made with ❤️ <b>@NexaBotsUpdates</b>""",
     )
 
     
-@Client.on_message(command(["cmdlist", "cmdlist@MusicsNexa_bot"]))
+@Client.on_message(command(["cmdlist", "cmdlist@PattsMusicBot"]))
 async def cmdlist(_, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name} 😉️!</b>
@@ -112,7 +101,7 @@ Here is the list of available commands! 😃️
  
 **❌ Don't End Voice Chat While Bot Playing A Song ❌**
  
-Made with ❤️ by **@NexaBotsUpdates**""",
+Made with ❤️""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -122,12 +111,7 @@ Made with ❤️ by **@NexaBotsUpdates**""",
                 ],
                 [
                     InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Nexa_bots"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                    "🔰️ My Update Channel 🔰️", url="https://t.me/NexaBotsUpdates"
+                        "⚜️ Join IsItIsAsItIs ⚜️", url="https://t.me/IsItIsAsItIs"
                     )
                 ]
             ]
@@ -144,25 +128,21 @@ __Note!__ ⚠️: This Project Is <b>Not Fully Owned By Me</b> !
 
 Credits To,
 
+<b><a href="https://github.com/Itz-fork/">CallsMusic</a></b> - For Editted code
 <b><a href="https://github.com/CallsMusic">CallsMusic</a></b> - For Callsmusic (Main Code ❤️) !
 <b>Mr Dark Prince</b> - For Yt Download!
 <b>TheHamkercat</b> - For Deezer and Saavn Download!
 <b>TeamDaisyX</b>
 <b>N A C</b> - For <code>/vc</code> Command
 
-Made with ❤️ by **@NexaBotsUpdates**
+Made with ❤️
 
 Respect To Code Owners! Not To Me!""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔰️ My Update Channel 🔰️", url="https://t.me/NexaBotsUpdates"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Nexa_bots"
+                        "⚜️ Join IsItIsAsIs ⚜️", url="https://t.me/IsItIsAsItIs"
                     )
                 ]
             ]
@@ -170,7 +150,7 @@ Respect To Code Owners! Not To Me!""",
     )   
 
 
-@Client.on_message(command(["vc", "vc@MusicsNexa_bot"]) & other_filters)
+@Client.on_message(command(["vc", "vc@PattsMusicBot"]) & other_filters)
 async def vc(_, message: Message):
     VC_LINK = f"https://t.me/{message.chat.username}?voicechat"
     await message.reply_text(
@@ -193,10 +173,7 @@ Enjoy!😌️❤️""",
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔰️ Update Channel 🔰️", url="https://t.me/NexaBotsUpdates"
-                    ),
-                    InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Nexa_bots"
+                        "🔰️ Join IsItIsAsItIs 🔰️", url="https://t.me/IsItIsAsItIs"
                     )
                 ]
             ]
@@ -204,7 +181,7 @@ Enjoy!😌️❤️""",
     )
 
     
-@Client.on_message(command(["search", "search@MusicsNexa_bot"]))
+@Client.on_message(command(["search", "search@PattsMusicBot"]))
 async def search(_, message: Message):
     await message.reply_text(
         "💁🏻‍♂️ Do you want to search for a YouTube video?",
