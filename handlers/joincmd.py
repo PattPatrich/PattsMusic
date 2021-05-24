@@ -25,7 +25,7 @@ async def addchannel(client, message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "NexaMusicAssistant" # F this
+        user.first_name =  "PattsMusicAssistant" # F this
 
     try:
         await USER.join_chat(invitelink)
@@ -39,7 +39,7 @@ async def addchannel(client, message):
         print(e)
         await message.reply_text(
             f"Shit! <b>❌ Flood Wait Error ❌ \n Sorry! user {user.first_name} couldn't join your group due to heavy join requests! Also make sure streamer account is not banned in your group. ✅"
-            "\n\nOr you can manually add @NexaMusicAssistant to your Group!</b> 😉",
+            "\n\nOr you can manually add @PattsMusicAssistant to your Group!</b> 😉",
         )
         return
     await message.reply_text(
