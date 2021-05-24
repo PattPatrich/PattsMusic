@@ -8,7 +8,7 @@ from helpers.filters import command, other_filters, other_filters2
 
 ## ~ Simple Config ~ ##
 FRIEND_BOT = "IsItIsAsItIsMusicBot"
-USER_ACCNAME = os.getenv("USER_ACCNAME", "NexaMusicAssistant")
+USER_ACCNAME = os.getenv("USER_ACCNAME", "PattsMusicAssistant")
 
 
 @Client.on_message(command(["start", "start@PattsMusicBot"]))
