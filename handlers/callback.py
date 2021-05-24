@@ -16,29 +16,20 @@ async def close(_, query: CallbackQuery):
 async def startcb(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""<b>Hey 😉️!</b>
-I'm The Nexa Music Bot. Friend of **@{FRIEND_BOT}** 😏️.
+I'm Patt's Music Bot. Friend of **@{FRIEND_BOT}** 😏️.
 I can play Music In Telegram Groups Via Voice Chat! 😌️.
-Made with ❤️ <b>@NexaBotsUpdates</b>""",
+Made with ❤️""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add Me To Your Group ➕", url="https://t.me/MusicsNexa_bot?startgroup=true"
+                        "🤨️ How To Use Me 🤨️", url="https://telegra.ph/How-To-Use-Patts-Music-Bot-05-23"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🤨️ How To Use Me 🤨️", url="https://telegra.ph/How-To-Use-Music-Nexa-Bot-03-16"
+                        "🔰️ Join IsItIsAsItIs 🔰️", url="https://t.me/IsItIsAsItIs"
                     )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🔰️ My Update Channel 🔰️", url="https://t.me/NexaBotsUpdates"
-                    ),
-                    InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Nexa_bots"
-                    )
-                ]
             ]
         )
     )
@@ -75,7 +66,7 @@ Here is the list of available commands! 😃️
 
 **❌ Don't End Voice Chat While Bot Playing A Song ❌**
 
-Made with ❤️ by **@NexaBotsUpdates**""",
+Made with ❤️""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
