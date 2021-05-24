@@ -1,6 +1,6 @@
 # Calls Music Plus
 
-### ![MusicsNexa_bot](https://telegra.ph/file/d74900bd008579c537ecb.png)
+### ![PattsMusicBot](https://telegra.ph/file/d74900bd008579c537ecb.png)
 
 **A [CallsMusic](https://github.com/callsmusic/callsmusic) Based Telegram Bot With Some Cool Extra Features ❤️**
 
